@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASI e DAITTA - 차세대 AI 통합 솔루션</title>
+    <meta name="description" content="ASI e DAITTA는 인공지능과 데이터 분석을 통합한 차세대 비즈니스 솔루션입니다.">
+    <meta name="keywords" content="AI, 인공지능, 데이터분석, 비즈니스솔루션, ASI, DAITTA">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- 로딩 오버레이 -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>로딩 중...</p>
+        </div>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">
+                        <i class="fas fa-brain"></i>
+                        <span>ASI e DAITTA</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">특징</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">가격</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">문의</a>
+                    </li>
+                    <li class="nav-item nav-cta">
+                        <button class="btn-login" id="btnLogin">로그인</button>
+                        <button class="btn-signup" id="btnSignup">회원가입</button>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="navToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 메인 섹션 -->
+    <main>
+        <!-- 히어로 섹션 -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1 class="hero-title">
+                        차세대 <span class="gradient-text">AI 통합 솔루션</span><br>
+                        ASI e DAITTA
+                    </h1>
+                    <p class="hero-description">
+                        인공지능과 데이터 분석을 통합한 혁신적인 비즈니스 플랫폼으로<br>
+                        귀하의 비즈니스를 차원이 다른 수준으로 끌어올립니다.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary btn-large" id="heroGetStarted">
+                            <i class="fas fa-rocket"></i>
+                            시작하기
+                        </button>
+                        <button class="btn-secondary btn-large" id="heroDemo">
+                            <i class="fas fa-play"></i>
+                            데모 보기
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" id="statsUsers">10K+</div>
+                            <div class="stat-label">활성 사용자</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">서비스 안정성</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">고객 지원</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+                    <div class="hero-image">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-chart-line"></i>
+                            <span>실시간 분석</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-brain"></i>
+                            <span>AI 예측</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>보안 강화</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 특징 섹션 -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">핵심 특징</h2>
+                    <p class="section-description">
+                        ASI e DAITTA가 제공하는 혁신적인 기능들을 만나보세요
+                    </p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="feature-title">지능형 AI 엔진</h3>
+                        <p class="feature-description">
+                            최첨단 머신러닝 알고리즘을 활용한 예측 분석과 자동화된 의사결정 지원
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="feature-title">실시간 데이터 분석</h3>
+                        <p class="feature-description">
+                            빅데이터를 실시간으로 처리하고 시각화하여 즉각적인 인사이트 제공
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="feature-title">클라우드 통합</h3>
+                        <p class="feature-description">
+                            안전하고 확장 가능한 클라우드 인프라로 언제 어디서나 접근 가능
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="feature-title">엔터프라이즈 보안</h3>
+                        <p class="feature-description">
+                            업계 최고 수준의 보안 프로토콜로 데이터를 안전하게 보호
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="feature-title">맞춤형 솔루션</h3>
+                        <p class="feature-description">
+                            각 비즈니스의 특성에 맞는 개인화된 AI 솔루션 제공
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="feature-title">24/7 지원</h3>
+                        <p class="feature-description">
+                            전문가 팀이 24시간 상시 대기하여 최고의 고객 지원 서비스 제공
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 가격 섹션 -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">가격 플랜</h2>
+                    <p class="section-description">
+                        귀하의 비즈니스 규모에 맞는 최적의 플랜을 선택하세요
+                    </p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Basic</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">9</span>
+                                <span class="period">/월</span>
+                            </div>
+                            <p class="plan-description">개인 및 소규모 팀을 위한 기본 플랜</p>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 기본 AI 분석</li>
+                                <li><i class="fas fa-check"></i> 월 1,000건 데이터 처리</li>
+                                <li><i class="fas fa-check"></i> 이메일 지원</li>
+                                <li><i class="fas fa-check"></i> 5GB 저장공간</li>
+                                <li><i class="fas fa-times"></i> 실시간 분석</li>
+                            </ul>
+                        </div>
+                        <button class="btn-plan" data-plan="basic">시작하기</button>
+                    </div>
+                    
+                    <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                        <div class="plan-badge">인기</div>
+                        <div class="plan-header">
+                            <h3 class="plan-name">Premium</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">29</span>
+                                <span class="period">/월</span>
+                            </div>
+                            <p class="plan-description">중소기업을 위한 프리미엄 플랜</p>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 고급 AI 분석</li>
+                                <li><i class="fas fa-check"></i> 월 10,000건 데이터 처리</li>
+                                <li><i class="fas fa-check"></i> 우선 지원</li>
+                                <li><i class="fas fa-check"></i> 50GB 저장공간</li>
+                                <li><i class="fas fa-check"></i> 실시간 분석</li>
+                            </ul>
+                        </div>
+                        <button class="btn-plan featured" data-plan="premium">시작하기</button>
+                    </div>
+                    
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Enterprise</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="period">/월</span>
+                            </div>
+                            <p class="plan-description">대기업을 위한 엔터프라이즈 플랜</p>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 모든 AI 기능</li>
+                                <li><i class="fas fa-check"></i> 무제한 데이터 처리</li>
+                                <li><i class="fas fa-check"></i> 전담 매니저</li>
+                                <li><i class="fas fa-check"></i> 무제한 저장공간</li>
+                                <li><i class="fas fa-check"></i> 맞춤형 솔루션</li>
+                            </ul>
+                        </div>
+                        <button class="btn-plan" data-plan="enterprise">문의하기</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 소개 섹션 -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <h2 class="section-title">ASI e DAITTA 소개</h2>
+                        <p class="about-description">
+                            ASI e DAITTA는 차세대 인공지능과 데이터 분석 기술을 결합한 혁신적인 플랫폼입니다. 
+                            우리는 복잡한 비즈니스 문제를 간단하고 효율적으로 해결할 수 있는 솔루션을 제공합니다.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-number">5+</div>
+                                <div class="highlight-text">년의 AI 연구 경험</div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-number">100+</div>
+                                <div class="highlight-text">기업 고객</div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-number">50+</div>
+                                <div class="highlight-text">전문 엔지니어</div>
+                            </div>
+                        </div>
+                        <button class="btn-primary" id="learnMore">더 알아보기</button>
+                    </div>
+                    <div class="about-visual" data-aos="fade-left">
+                        <div class="about-image">
+                            <div class="tech-stack">
+                                <div class="tech-item">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>Big Data</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 문의 섹션 -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">문의하기</h2>
+                    <p class="section-description">
+                        궁금한 점이 있으시거나 맞춤형 솔루션이 필요하시면 언제든지 연락해주세요
+                    </p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>이메일</h4>
+                                <p>contact@asi-daitta.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>전화</h4>
+                                <p>+82-2-1234-5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>주소</h4>
+                                <p>서울특별시 강남구<br>테헤란로 123</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" data-aos="fade-left">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">이름 *</label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">이메일 *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">전화번호</label>
+                                <input type="tel" id="contactPhone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactCompany">회사명</label>
+                                <input type="text" id="contactCompany" name="company">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactCategory">문의 유형 *</label>
+                            <select id="contactCategory" name="category" required>
+                                <option value="">선택해주세요</option>
+                                <option value="general">일반 문의</option>
+                                <option value="sales">영업 문의</option>
+                                <option value="technical">기술 지원</option>
+                                <option value="partnership">파트너십</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">제목 *</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">메시지 *</label>
+                            <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            메시지 보내기
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 뉴스레터 섹션 -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content" data-aos="fade-up">
+                    <div class="newsletter-text">
+                        <h3>최신 소식을 받아보세요</h3>
+                        <p>ASI e DAITTA의 새로운 기능과 업데이트를 이메일로 받아보세요</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="newsletter-input">
+                            <input type="email" id="newsletterEmail" placeholder="이메일 주소를 입력하세요" required>
+                            <button type="submit" class="btn-newsletter">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>ASI e DAITTA</span>
+                    </div>
+                    <p class="footer-description">
+                        차세대 AI 통합 솔루션으로<br>
+                        비즈니스의 미래를 만들어갑니다.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">제품</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">특징</a></li>
+                        <li><a href="#pricing">가격</a></li>
+                        <li><a href="#">데모</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">회사</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">소개</a></li>
+                        <li><a href="#">블로그</a></li>
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">언론</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">문의하기</a></li>
+                        <li><a href="#">도움말</a></li>
+                        <li><a href="#">개발자</a></li>
+                        <li><a href="#">상태</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 ASI e DAITTA. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">쿠키 정책</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 로그인 모달 -->
+    <div id="loginModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>로그인</h3>
+                <button class="modal-close" id="loginModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">이메일</label>
+                        <input type="email" id="loginEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">비밀번호</label>
+                        <input type="password" id="loginPassword" name="password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe">
+                            <span class="checkmark"></span>
+                            로그인 상태 유지
+                        </label>
+                        <a href="#" class="forgot-password">비밀번호 찾기</a>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large">로그인</button>
+                    <div class="form-divider">
+                        <span>또는</span>
+                    </div>
+                    <p class="switch-form">
+                        계정이 없으신가요? <a href="#" id="switchToSignup">회원가입</a>
+                    </p>
+                </form>
+                <div id="loginError" class="error-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 회원가입 모달 -->
+    <div id="signupModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>회원가입</h3>
+                <button class="modal-close" id="signupModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="signupForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="signupFirstName">이름</label>
+                            <input type="text" id="signupFirstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupLastName">성</label>
+                            <input type="text" id="signupLastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupUsername">사용자명</label>
+                        <input type="text" id="signupUsername" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">이메일</label>
+                        <input type="email" id="signupEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">비밀번호</label>
+                        <input type="password" id="signupPassword" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupConfirmPassword">비밀번호 확인</label>
+                        <input type="password" id="signupConfirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPhone">전화번호</label>
+                        <input type="tel" id="signupPhone" name="phoneNumber">
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <span class="checkmark"></span>
+                            <a href="#">이용약관</a> 및 <a href="#">개인정보처리방침</a>에 동의합니다
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large">회원가입</button>
+                    <div class="form-divider">
+                        <span>또는</span>
+                    </div>
+                    <p class="switch-form">
+                        이미 계정이 있으신가요? <a href="#" id="switchToLogin">로그인</a>
+                    </p>
+                </form>
+                <div id="signupError" class="error-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 구독 모달 -->
+    <div id="subscriptionModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>구독 신청</h3>
+                <button class="modal-close" id="subscriptionModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="subscriptionContent">
+                    <!-- 동적으로 로드됨 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 토스트 알림 -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <span id="toastMessage"></span>
+        </div>
+    </div>
+
+    <!-- Back to top 버튼 -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
